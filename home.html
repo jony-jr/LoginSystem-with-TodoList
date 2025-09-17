@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/homeStyle.css">
+</head>
+<body>
+
+
+ <nav class="navbar navbar-expand-lg position-fixed top-0 w-100  d-flex justify-content-center align-items-center ">
+   <div class="container ">
+     <p class="p-0 m-0 fs-2 text-uppercase  user-select-none">Todo List</p>
+     <span id="my-userName" class="w-auto suc text-capitalize fs-4 text-primary user-select-none"></span>
+     <button
+       id="log-out-btn"
+       type="button"
+       class="btn solid btn-outline-danger"
+     >LogOut</button>
+   </div>
+ </nav>
+
+  <main>
+<ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+
+
+<h2 class="text-center user-select-none">TO-DO-LIST</h2>
+
+<section>
+  
+<div class="container">
+
+
+  <div class="row g-4 justify-content-center">
+
+
+    <div class="col-md-6">
+
+      <div>
+
+        <input type="text"  id="inputnametask" placeholder="enter your task" class="form-control">
+      </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+
+
+
+      <div>
+
+
+        <select name="" id="inputtaskstatus" class="form-control" >
+          <option value="All">All</option>
+          <option value="Pending">Pending</option>
+          <option value="completed">completed</option>
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-8">
+
+      <div>
+        <button id="addtaskbtn" class="btn btn-primary w-100">Add New Task</button>
+        <button id="updataskbtn" class="btn btn-warning w-100 d-none">Update</button>
+      </div>
+
+    </div>
+
+    <div class="col-md-10">
+      <div>
+
+        <input id="inputsearchtask" type="text" placeholder="search" class="form-control">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+
+      <div class="w-75  min-vh-100 m-auto mt-4 p-4 rounded-5 bg-black bg-opacity-50">
+        <h3 class="text-center text-white">Tasks</h3>
+
+
+        <div class="row g-4" id="alltaskscontainer">
+
+
+
+
+
+        </div>
+
+
+        
+      </div>
+
+    </div>
+
+
+</section>
+
+  </main>
+
+
+
+
+
+
+
+<script src="./js/main.js"></script>
+
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+

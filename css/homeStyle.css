@@ -1,0 +1,198 @@
+.custom-container nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: -5px 5px 15px 0px rgba(39, 144, 229, 0.743);
+}
+main{
+    margin-top: 5rem;
+}
+nav{
+ 
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Adjust blur intensity */
+  color: #fff; /* Text color */
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #4e54c8;
+    overflow: hidden;
+    z-index: -1;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 81%;
+    width: 168px;
+    height: 168px;
+    bottom: -168px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 17%;
+    width: 103px;
+    height: 103px;
+    bottom: -103px;
+    animation-delay: 3s;
+}
+.background li:nth-child(2) {
+    left: 8%;
+    width: 144px;
+    height: 144px;
+    bottom: -144px;
+    animation-delay: 8s;
+}
+.background li:nth-child(3) {
+    left: 55%;
+    width: 163px;
+    height: 163px;
+    bottom: -163px;
+    animation-delay: 11s;
+}
+.background li:nth-child(4) {
+    left: 78%;
+    width: 191px;
+    height: 191px;
+    bottom: -191px;
+    animation-delay: 4s;
+}
+.background li:nth-child(5) {
+    left: 59%;
+    width: 197px;
+    height: 197px;
+    bottom: -197px;
+    animation-delay: 4s;
+}
+.background li:nth-child(6) {
+    left: 21%;
+    width: 131px;
+    height: 131px;
+    bottom: -131px;
+    animation-delay: 6s;
+}
+.background li:nth-child(7) {
+    left: 38%;
+    width: 243px;
+    height: 243px;
+    bottom: -243px;
+    animation-delay: 35s;
+}
+.background li:nth-child(8) {
+    left: 70%;
+    width: 126px;
+    height: 126px;
+    bottom: -126px;
+    animation-delay: 17s;
+}
+.background li:nth-child(9) {
+    left: 58%;
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
+    animation-delay: 2s;
+}
+
+
+
+
+h2 {
+
+
+    font-size: 65px;
+    background-image: linear-gradient(90deg, rgba(230,78,44,1) 6%, rgba(223,140,81,1) 50%, rgba(255,165,61,1) 69%, rgba(48,161,174,0.9024859943977591) 93%);
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    margin: 20px auto;
+
+}
+
+
+.mylabal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ;
+    margin-right: 5px;
+    -webkit-transition: 0.5s ;
+    -moz-transition: 0.5s ;
+    -ms-transition: 0.5s ;
+    -o-transition: 0.5s ;
+}
+
+.mycheckbox:checked + .mylabal {
+
+
+    background-color: rgb(37, 186, 37);
+}
+
+
+.mycheckbox:checked + .mylabal::before { 
+
+content: "\f00c";
+font-family: "Font Awesome 6 Free";
+font-weight: 900;
+
+color: #fff;
+
+
+
+
+
+}
+
+.task {
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(226, 224, 224, 0.5);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+.done {
+    background-color: rgba(14, 179, 14, 0.653);
+    opacity: 0.7;
+}
+
+.done p {
+    text-decoration: line-through;
+}
